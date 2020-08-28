@@ -10,6 +10,7 @@ import java.time.OffsetDateTime;
 
 @Data
 @Entity
+@Table(name = "farm")
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Farm {
 
