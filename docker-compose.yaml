@@ -1,0 +1,15 @@
+version: "3.0"
+services:
+  farm_mysql:
+    container_name: farm_mysql
+    image: mysql:8
+    ports:
+    - "3306:3306"
+    volumes:
+    - db_invoice:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+
+volumes:
+  db_invoice:
